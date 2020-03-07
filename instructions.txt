@@ -1,0 +1,8 @@
+Run visualizer.
+KEYS to press:
+	C: if you have rectangles that are under the same folder. You can press C to collapse, so you move up in the directory
+	E: expand, go back down a level
+	X: to collapse the intire tree to one rectangle
+	A: expand ALL
+	arrows up/down (only works on leafs): if you want to move one "file" you can change the size of the file
+	M: click on a file, move your coursor to a folder you want to move your file to, click m.
