@@ -1,5 +1,3 @@
-"""Assignment 2: Trees for Treemap
-"""
 from __future__ import annotations
 import os
 import math
@@ -86,7 +84,6 @@ class TMTree:
         self._subtrees = subtrees[:]
         self._parent_tree = None
 
-        # You will change this in Task 5
         # if len(self._subtrees) > 0:
         #     self._expanded = True
         # else:
@@ -119,11 +116,6 @@ class TMTree:
         """Update the rectangles in this tree and its descendents using the
         treemap algorithm to fill the area defined by pygame rectangle <rect>.
         """
-        # TODO: (Task 2) Complete the body of this method.
-        # Read the handout carefully to help get started identifying base cases,
-        # then write the outline of a recursive step.
-        #
-        # Programming tip: use "tuple unpacking assignment" to easily extract
         # elements of a rectangle, as follows.
         # x, y, width, height = rect
         if self._name is None or self.data_size == 0:
@@ -230,7 +222,7 @@ class TMTree:
             self._parent_tree._subtrees.remove(self)
             if self._parent_tree._subtrees == []:
                 self._parent_tree.data_size = 0
-            temp.update_data_sizes()  ##### ??????
+            temp.update_data_sizes()  #####
             # new_subtree = TMTree(self._name, [], self.data_size)
             destination._subtrees.append(new_subtree)
             new_subtree._parent_tree = destination # ?
@@ -352,11 +344,6 @@ class FileSystemTree(TMTree):
 
         Precondition: <path> is a valid path for this computer.
         """
-        # Remember that you should recursively go through the file system
-        # and create new FileSystemTree objects for each file and folder
-        # encountered.
-        #
-        # Also remember to make good use of the superclass constructor!
         name = os.path.basename(path)
         size = os.path.getsize(path)
         # Base case

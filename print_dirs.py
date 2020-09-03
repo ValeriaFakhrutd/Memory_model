@@ -1,6 +1,3 @@
-"""Assignment 2: Demonstration of using the os module
-"""
-
 import os
 
 
@@ -20,7 +17,7 @@ def print_items(d: str, indentation: str) -> None:
 
 if __name__ == '__main__':
     # Put in a path like
-    # 'C:\\Users\\David\\Documents\\csc148\\assignments' (Windows) or
-    # '/Users/dianeh/Documents/courses/csc148/assignments' (OSX)
+    # 'C:\\Users\\Lera\\Documents\\csc148\\assignments' (Windows) or
+    # '/Users/Documents/courses/csc148/assignments' (OSX)
     # to print the contents of that folder.
     print_items(INSERT_PATH_HERE, '')

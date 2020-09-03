@@ -1,5 +1,3 @@
-"""Assignment 2: Treemap Visualiser
-"""
 from typing import Optional, Tuple
 import pygame
 from tm_trees import TMTree, FileSystemTree
